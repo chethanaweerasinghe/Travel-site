@@ -1,0 +1,104 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190%, 190%);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.about .secContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.about .secContainer .mainContent {
+  gap: 1rem;
+}
+.about .secContainer .mainContent .singheItem {
+  text-align: center;
+}
+.about .secContainer .mainContent .singheItem img {
+  width: 100px;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 2px solid var(--blackColor);
+}
+.about .secContainer .mainContent .singheItem h3 {
+  font-weight: 700;
+  color: var(--blackColor);
+  padding: 0.5rem;
+}
+.about .secContainer .mainContent .singheItem p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.about .secContainer .vidioCard {
+  margin-top: 2rem;
+  background: var(--textColor);
+  background-position: center;
+  block-size: cover;
+  background-repeat: no-repeat;
+}
+.about .secContainer .vidioCard .cardContent {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about .secContainer .vidioCard .cardContent .cardText h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.about .secContainer .vidioCard .cardContent .cardText p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about .secContainer .vidioCard .cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .secContainer .vidioCard .cardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 720px) {
+  .about .secContainer .vidioCard .cardContent {
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+  .about .secContainer .vidioCard .cardContent .cardText h2 {
+    font-size: 2rem;
+  }
+  .about .secContainer .vidioCard .cardContent .cardText p {
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  .about .secContainer .vidioCard .cardContent {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .secContainer {
+    width: 85%;
+    margin: auto;
+  }
+  .about .secContainer .mainContent {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=about.css.map */
